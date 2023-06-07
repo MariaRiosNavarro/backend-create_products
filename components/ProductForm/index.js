@@ -3,7 +3,7 @@ import { StyledButton } from "../Button/Button.styled";
 import useSWR from "swr";
 //import useSWR
 
-export default async function ProductForm() {
+export default function ProductForm() {
   //SWR
   const { mutate } = useSWR("/api/products");
 
