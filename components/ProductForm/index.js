@@ -1,13 +1,11 @@
 import { StyledForm, StyledHeading, StyledLabel } from "./ProductForm.styled";
 import { StyledButton } from "../Button/Button.styled";
-
-//import useSWR
-
 import useSWR from "swr";
+//import useSWR
 
 export default async function ProductForm() {
   //SWR
-  const { mutate } = useSWR("api/products");
+  const { mutate } = useSWR("/api/products");
 
   //by Fetch add async by handlesubmit
 
